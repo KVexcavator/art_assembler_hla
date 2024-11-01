@@ -1,0 +1,21 @@
+https://www.plantation-productions.com/Webster/HighLevelAsm/LInuxDownload.html
+* cкачать пакет linux64.hla.tar.gz
+* инструкция внизу на странице сайта, надо читать
+
+sudo apt-get update
+sudo apt-get install libc-i386
+file linux64.hla.tar.gz
+sudo tar -xf linux64.hla.tar.gz -C /usr/local
+nano ~/.bashrc
+export PATH=/usr/local/usr/hla:$PATH
+export hlalib=/usr/local/usr/hla/hlalib
+export hlainc=/usr/local/usr/hla/include
+source ~/.bashrc
+echo $hlalib
+-> /usr/local/usr/hla/hlalib
+echo $hlainc
+-> /usr/local/usr/hla/include
+hla
+-------------------------------------
+hla hw.hla
+./hw

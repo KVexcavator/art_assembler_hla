@@ -1,0 +1,16 @@
+integers:
+static
+    i8: int8 := 8;
+    i16: int16 := 1600;
+    i32: int32 := -320000;
+boolean:
+-------------------------------------
+static
+    BoolVar: boolean;
+    HasClass: boolean := false;
+    IsClear: boolean := true;
+-------------------------------------
+Character Values
+static
+    c: char;
+    LetterA: char := 'A';
