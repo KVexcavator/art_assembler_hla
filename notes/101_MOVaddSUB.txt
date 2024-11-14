@@ -1,0 +1,9 @@
+mov( source_operand, destination_operand );
+destination_operand = source_operand ;
+Возможно, главное ограничение на операнды инструкции mov заключается в том, что они оба должны быть одинакового размера. То есть, вы можете перемещать данные между парой объектов байта (8 бит), объектами слова (16 бит) или объектами двойного слова (32 бита); однако вы не можете смешивать размеры операндов.
+-------------------------------------
+add( source_operand, destination_operand );
+destination_operand = destination_operand + source_operand ;
+-------------------------------------
+sub( source_operand, destination_operand );
+destination_operand = destination_operand - source_operand ;

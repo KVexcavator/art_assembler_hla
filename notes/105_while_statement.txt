@@ -1,0 +1,11 @@
+while..endwhile
+
+while( expression ) do
+...
+endwhile;
+
+mov( 0, i );
+while( i < 10 ) do
+  stdout.put( "i=", i, nl );
+  add( 1, i );
+endwhile;

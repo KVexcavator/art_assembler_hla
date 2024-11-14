@@ -1,0 +1,28 @@
+try..exception..endtry
+предоставляет очень мощные возможности обработки исключений
+
+try
+...
+exception( exceptionID )
+...
+exception( exceptionID )
+...
+endtry;
+
+Если возникает ошибка (исключение), то программа прерывает управление в точке исключения (то есть программа вызывает исключение). С каждым исключением связана беззнаковая целочисленная константа, известная как идентификатор исключения. Заголовочный файл excepts.hhf в стандартной библиотеке HLA предопределяет несколько идентификаторов исключений, хотя вы можете создавать новые для своих собственных целей.
+Если возникает исключение и нет активного оператора try..endtry или активные операторы try..endtry не обрабатывают конкретное исключение, программа прервется с сообщением об ошибке.
+
+repeat
+  mov( false, GoodInteger );
+  try
+    // Note: GoodInteger must be a boolean var.
+    stdout.put( "Enter an integer: " );
+    stdin.get( i );
+    mov( true, GoodInteger );
+  exception( ex.ConversionError );
+    stdout.put( "Illegal numeric value, please re-enter", nl );
+  exception( ex.ValueOutOfRange );
+    stdout.put( "Value is out of range, please re-enter", nl );
+  endtry;
+until( GoodInteger );
+----------------------------------------

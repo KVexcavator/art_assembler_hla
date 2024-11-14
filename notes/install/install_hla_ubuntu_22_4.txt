@@ -18,4 +18,4 @@ echo $hlainc
 hla
 -------------------------------------
 hla hw.hla
-./hw
+./bin/hw

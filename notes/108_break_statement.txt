@@ -1,0 +1,4 @@
+break и breakif
+обеспечить возможность преждевременного выхода из цикла
+break;
+breakif( expression );

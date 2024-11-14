@@ -1,0 +1,14 @@
+forever..endfor
+
+Этот оператор создает бесконечный цикл. Вы также можете использовать операторы break и breakif вместе с forever..endfor для создания цикла, который проверяет завершение цикла в середине цикла.
+
+forever
+  << последовательность одного или нескольких утверждений >>
+endfor;
+
+forever
+  stdout.put( "Enter an integer less than 10: ");
+  stdin.get( i );
+  breakif( i < 10 );
+  stdout.put( "The value needs to be less than 10!", nl );
+endfor;

@@ -1,0 +1,9 @@
+for..endfor
+
+for( Initial_Stmt; Termination_Expression; Post_Body_Statement ) do
+  << Loop body >>
+endfor;
+
+for( mov( 0, i ); i < 10; add(1, i )) do
+  stdout.put( "i=", i, nl );
+endfor;
